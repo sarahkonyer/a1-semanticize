@@ -26,6 +26,11 @@ h3 {
 	font-size:18px; line-height:24px;
 }
 
+.caption {
+	font-size: 11px;
+	color: #666;
+}
+
 table {
 	margin:10px 0; 
 	background:#FFF;
