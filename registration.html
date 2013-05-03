@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mozilla Drumbeat | Form example</title>
+  <link type="text/css" rel="stylesheet" media="screen" href="css/main.css">
+</head>
+ <body>
+ <div id="container">
+ 	<div id="header">
+        <div id="logo">Mozilla Drumbeat</div>	
+		<h1>Connect. Share Projects. Hack everything.</h1>
+	</div>
+	<div id="navcontainer">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="video.html">Videos</a></li>
+			<li><a href="map.html">Map</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="registration.html" class="active">Registration</a></li>
+		</ul>
+	</div>
+    <div id="main">
+  			<h2>Register to our next event</h2>
+
+	<form action="" enctype="text/plain" method="post">
+		<p><label>Name:</label> <input name="name" type="text"></p>
+
+		<p><label>Email:</label> <input name="email" type="text"></p>
+
+		<p><label>Location:</label>
+		<select name="location">
+			<option value="vancouver">Vancouver</option>
+			<option value="victoria">Victoria</option>
+			<option value="kootenays">Kootenays</option>
+		</select></p>
+
+		<p><label>Gender:</label>
+		<input type="radio" name="gender" value="F">Female
+		<input type="radio" name="gender" value="M">Male</p>
+
+		<p><label>Experience: </label><br>
+		<textarea name="experience"></textarea></p>
+		<p><input type="submit" value="Sign Up"></p>
+	</form>
+    
+	</div>
+    <div id="footer">
+    	<p>Copyright info goes here.</p>
+	</div>
+    
+	<div id="socmed">
+		<ul>
+			<li id="twitter"><a href="http://twitter.com/mozilladrumbeat">Twitter</a></li>
+			<li id="facebook"><a href="http://www.facebook.com/mozilladrumbeat">Facebook</a></li>
+			<li id="flickr"><a href="http://www.flickr.com/search/?w=all&q=drumbeat&m=tags">Flickr</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
