@@ -4,14 +4,27 @@ body {
 	color:#333;
 }
 
+@font-face {
+    font-family: 'league_gothicCnRg';
+    src: url('fonts/leaguegothic-condensedregular-webfont.eot');
+    src: url('fonts/leaguegothic-condensedregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/leaguegothic-condensedregular-webfont.woff') format('woff'),
+         url('fonts/leaguegothic-condensedregular-webfont.ttf') format('truetype'),
+         url('fonts/leaguegothic-condensedregular-webfont.svg#league_gothicCnRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 h1 {
-	font:34px georgia, "Times New Roman", Times, serif;
+	font:34px league_gothicCnRg, georgia, "Times New Roman", Times, serif;
 	color:#333;
 }
 
 h2 {
 	font:32px georgia, "Times New Roman", Times, serif;
 	color:#333;
+	text-shadow: 2px 2px 2px #fc6;
 }
 
 h3 {
@@ -64,7 +77,7 @@ form label {font-weight:bold;}
 	border:1px solid #CCC;
 }
 
-#header {
+header {
 	float:left;
 	width:960px;
 	height:140px;
@@ -77,7 +90,7 @@ form label {font-weight:bold;}
 	text-indent:-9999px;
 }
 
-#header h1 {
+header h1 {
 	position:absolute;
 	top:70px; left:100px;
 	z-index:2;	
@@ -86,9 +99,9 @@ form label {font-weight:bold;}
 
 /* Top Navigation 
 -------------------------------*/
-#navcontainer {float:left; width:960px; }
+nav {float:left; width:960px; }
 
-#navcontainer ul {
+nav ul {
 	padding-left: 0;
 	margin-left: 0;
 	background-color: #CCC;
@@ -97,9 +110,9 @@ form label {font-weight:bold;}
 	width: 100%;
 }
 
-#navcontainer ul li { display: inline; }
+nav ul li { display: inline; }
 
-#navcontainer ul li a {
+nav ul li a {
 	padding: 8px 30px;
 	background-color: #CCC;
 	color: #333;
@@ -109,7 +122,7 @@ form label {font-weight:bold;}
 	text-transform:uppercase;
 }
 
-#navcontainer ul li a:hover, #navcontainer ul li a.active {
+nav ul li a:hover, nav ul li a.active {
 	background-color: #333;
 	color: #fff;
 }
@@ -125,11 +138,11 @@ form label {font-weight:bold;}
 	
 }
 
-#content {
+section {
 	float:left;
 	width:600px;
 }
-#sidebar {
+aside {
 	float:right;
 	width:250px;
 	padding: 20px 10px; margin-top:20px	;
@@ -143,7 +156,7 @@ form label {font-weight:bold;}
 /* Footer and social media links
 -------------------------------*/
 
-#footer {
+footer {
 	clear:both;
 	width:900px;
 	text-align:center;
